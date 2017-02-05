@@ -1,0 +1,17 @@
+﻿@model ASP.NET.Products.Models.ProductsDB
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div >
+    @{
+        foreach (var item in Model.Products)
+        {
+            @Html.Partial("PartialView", item);
+        }
+    }
+</div>
+@*@{ 
+    @Model.Products.ForEach(p => @Html.Partial("PartialView", p))
+}*@

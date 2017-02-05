@@ -1,0 +1,13 @@
+﻿@model ASP.NET.Products.Models.Product
+
+@{
+    ViewBag.Title = "PartialView";
+}
+<div style="display:inline-block;">
+    <h2>@*PartialView*@</h2>
+
+    <img src="@Model.ImagePath" style="width:200px; height:200px" />
+    <br />
+    @Model.Discription
+</div>
+

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ASP.NET.Products.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,13 @@ namespace ASP.NET.Products.Controllers
         // GET: Index
         public ActionResult Index()
         {
-            return View();
+            ProductsDB pDB = new ProductsDB();
+            return View(pDB);
         }
+
+        //public ActionResult PartialViewResult(Product p)
+        //{
+        //    return PartialView();
+        //}
     }
 }
